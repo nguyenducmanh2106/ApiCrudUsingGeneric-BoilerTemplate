@@ -15,7 +15,6 @@ namespace SV.HRM.Service.ThongTinNhanSu.Ioc
             services.AddCachingProcessServices();
             services.AddStaffAutoMapper();
             //services.AddScoped<IStaffHandler, StaffHandler>();
-            //services.AddScoped<IHistoryHandler, HistoryHandler>();
         }
     }
 }
