@@ -10,4 +10,12 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\01.Common\Caching\Caching.csproj" />
+    <ProjectReference Include="..\01.Common\Core\Core.csproj" />
+    <ProjectReference Include="..\01.Common\DataProcess\DataProcess.csproj" />
+    <ProjectReference Include="..\01.Common\Logging\Logging.csproj" />
+    <ProjectReference Include="..\01.Common\Models\Models.csproj" />
+  </ItemGroup>
+
 </Project>

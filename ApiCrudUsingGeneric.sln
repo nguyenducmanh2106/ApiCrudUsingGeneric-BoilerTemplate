@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCrudUsingGeneric", "ApiCrudUsingGeneric\ApiCrudUsingGeneric.csproj", "{13D96B82-78FB-44AB-93B5-7835A1EA2909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiCrudUsingGeneric", "ApiCrudUsingGeneric\ApiCrudUsingGeneric.csproj", "{13D96B82-78FB-44AB-93B5-7835A1EA2909}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{ADCFAF41-C379-4BF4-B76E-4EE1DCDE9F73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching", "01.Common\Caching\Caching.csproj", "{651A8F0C-0CFE-4ABD-A687-6AF262C22E73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "01.Common\Core\Core.csproj", "{E6E761FB-36FD-47C4-A438-F8E8971B93F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProcess", "01.Common\DataProcess\DataProcess.csproj", "{06CB6804-6CB5-4B1F-85EB-3A65D5B5F45E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging", "01.Common\Logging\Logging.csproj", "{515500AF-7208-4FF8-AE8E-2E907BB321C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "01.Common\Models\Models.csproj", "{DEADEB10-F676-4D3D-9FCB-B95E99913CCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,36 @@ Global
 		{13D96B82-78FB-44AB-93B5-7835A1EA2909}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D96B82-78FB-44AB-93B5-7835A1EA2909}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D96B82-78FB-44AB-93B5-7835A1EA2909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651A8F0C-0CFE-4ABD-A687-6AF262C22E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651A8F0C-0CFE-4ABD-A687-6AF262C22E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651A8F0C-0CFE-4ABD-A687-6AF262C22E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651A8F0C-0CFE-4ABD-A687-6AF262C22E73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E761FB-36FD-47C4-A438-F8E8971B93F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E761FB-36FD-47C4-A438-F8E8971B93F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E761FB-36FD-47C4-A438-F8E8971B93F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E761FB-36FD-47C4-A438-F8E8971B93F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CB6804-6CB5-4B1F-85EB-3A65D5B5F45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CB6804-6CB5-4B1F-85EB-3A65D5B5F45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06CB6804-6CB5-4B1F-85EB-3A65D5B5F45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06CB6804-6CB5-4B1F-85EB-3A65D5B5F45E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515500AF-7208-4FF8-AE8E-2E907BB321C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515500AF-7208-4FF8-AE8E-2E907BB321C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515500AF-7208-4FF8-AE8E-2E907BB321C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515500AF-7208-4FF8-AE8E-2E907BB321C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEADEB10-F676-4D3D-9FCB-B95E99913CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEADEB10-F676-4D3D-9FCB-B95E99913CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEADEB10-F676-4D3D-9FCB-B95E99913CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEADEB10-F676-4D3D-9FCB-B95E99913CCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{651A8F0C-0CFE-4ABD-A687-6AF262C22E73} = {ADCFAF41-C379-4BF4-B76E-4EE1DCDE9F73}
+		{E6E761FB-36FD-47C4-A438-F8E8971B93F5} = {ADCFAF41-C379-4BF4-B76E-4EE1DCDE9F73}
+		{06CB6804-6CB5-4B1F-85EB-3A65D5B5F45E} = {ADCFAF41-C379-4BF4-B76E-4EE1DCDE9F73}
+		{515500AF-7208-4FF8-AE8E-2E907BB321C3} = {ADCFAF41-C379-4BF4-B76E-4EE1DCDE9F73}
+		{DEADEB10-F676-4D3D-9FCB-B95E99913CCC} = {ADCFAF41-C379-4BF4-B76E-4EE1DCDE9F73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EA1BBB4D-1569-4D45-B546-0B58825CFEA7}
